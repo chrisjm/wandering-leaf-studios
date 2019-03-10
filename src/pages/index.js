@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Image from '../components/image'
+import logo from '../images/wandering-leaf-studios-logo.png'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
@@ -8,7 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="bg-white p-10">
       <div className="container mx-auto">
-        <Image />
+        <img src={logo} alt="Wandering Leaf Studios Logo" />
       </div>
     </div>
     <div className="container mx-auto p-10 text-center bg-green">

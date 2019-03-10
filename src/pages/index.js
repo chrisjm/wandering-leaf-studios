@@ -1,29 +1,25 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
-  <Layout>
+  <div className="bg-green text-white">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={{ width: `100%`, margin: `1.45rem 0` }}>
-      <Image />
+    <div className="bg-white p-10">
+      <div className="container mx-auto">
+        <Image />
+      </div>
     </div>
-    <div
-      style={{
-        fontFamily: `sans-serif`,
-        textAlign: `center`
-      }}
-    >
-      <a
-        href="mailto:info@wanderingleafstudios.com"
-        style={{ color: `#588F27` }}
-      >
+    <div className="container mx-auto p-10 text-center bg-green">
+      <a href="mailto:info@wanderingleafstudios.com" className="text-white">
         Contact
       </a>
     </div>
-  </Layout>
+    <footer className="mx-auto text-center text-green-dark text-sm">
+      © 2019 Wandering Leaf Studios LLC
+    </footer>
+  </div>
 )
 
 export default IndexPage

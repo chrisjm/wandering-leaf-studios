@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wandering Leaf Studios`,
-    description: `Small web app development studio focused on goals and results`,
+    description: `Small web app development studio focused on goals and results.`,
     author: `@chrisjm`,
   },
   plugins: [
@@ -27,6 +27,7 @@ module.exports = {
         icon: `src/images/wandering-leaf-studios-icon.png`,
       },
     },
+    `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

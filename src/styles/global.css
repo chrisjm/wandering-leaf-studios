@@ -24,6 +24,7 @@
   * .skew-45 { ... }
   */
 
-body {
-  background-color: #588f27;
+.bg-green,
+.bg-green a {
+  color: white;
 }

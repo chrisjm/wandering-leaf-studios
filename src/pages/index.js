@@ -9,7 +9,7 @@ import { faQuestionCircle, faBeer } from '@fortawesome/free-solid-svg-icons'
 library.add(faQuestionCircle, faBeer)
 
 const IndexPage = () => (
-  <div>
+  <div className="font-sans">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="p-5 lg:py-16">
       <div className="container mx-auto">
@@ -20,9 +20,9 @@ const IndexPage = () => (
         />
       </div>
     </div>
-    <div className="bg-green p-5 lg:p-10">
+    <div className="bg-green p-5 lg:p-10 bg-leaves">
       <div className="container mx-auto">
-        <h2 className="text-4xl text-center mb-10">Projects</h2>
+        <h2 className="text-5xl text-center mb-10">Projects</h2>
         <div className="flex mx-auto flex-col sm:flex-row sm:justify-center">
           <div className="text-center sm:max-w-xs mb-5 sm:mb-0">
             <h3>
@@ -33,7 +33,9 @@ const IndexPage = () => (
                 Quiz App
               </a>
             </h3>
-            <p>A simple quiz application built with React and Material-UI.</p>
+            <div>
+              A simple quiz application built with React and Material-UI.
+            </div>
           </div>
           <div className="text-center sm:max-w-xs mb-5 sm:mb-0">
             <h3>
@@ -44,17 +46,20 @@ const IndexPage = () => (
                 Open Brewery DB
               </a>
             </h3>
-            <p>
+            <div>
               A free API for public information on breweries, cideries,
               brewpubs, and bottleshops.
-            </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div className="py-10">
       <div className="container mx-auto text-center">
-        <a href="mailto:info@wanderingleafstudios.com" className="bg-transparent hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded no-underline mb-5 inline-block">
+        <a
+          href="mailto:info@wanderingleafstudios.com"
+          className="bg-transparent hover:bg-green text-green font-semibold hover:text-white py-2 px-4 border border-green hover:border-transparent rounded no-underline mb-5 inline-block"
+        >
           Contact
         </a>
         <footer className="mx-auto text-center text-sm">
